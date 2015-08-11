@@ -16,14 +16,15 @@ var Nav  = React.createClass({
 					<ul>
 						<li><Link to='checking'>考勤统计</Link></li>
 						<li><Link to='apply'>考勤申请</Link></li>
-						<li>人事管理</li>
+						<li><Link to='staff'>人事管理</Link></li>
 						<li>系统设置</li>
 					</ul>
 				</div>
-				<div className="col-md-1"><RouteHandler/></div>
+				<div className="col-md-8"><RouteHandler/></div>
 			</div>)
 	}
 });
+
 
 
 module.exports = Nav

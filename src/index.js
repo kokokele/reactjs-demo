@@ -1,8 +1,8 @@
 import React from 'react';
-import Nav from './Nav';
-import Checking from  './Checking';
-import Content from './Content';
-import Apply from './Apply';
+import Nav from './view/Nav';
+import Checking from  './view/Checking';
+import Apply from './view/Apply';
+import Staff from './view/Staff';
 
 var Router = require('react-router');
 var {
@@ -13,34 +13,16 @@ var {
   Link
 } = Router;
 
-// var Index = React.createClass({
-// 	render:function(){
-// 		return (<div>Index
-// 			<p>
-// 			<Link to='my'>MyRect</Link>
-// 			</p>
-// 			<RouteHandler/>
-
-// 			</div>)
-		
-// 	}
-// })
-
-
 var routes = (
-	    <route handler={Nav}>
-		    <Route name="checking" handler={Checking}/>
-		    <Route name="apply" handler={Apply}/>
-		    <DefaultRoute handler={Checking}/>
-		</route>
+  <route handler={Nav}>
+      <Route name="checking" handler={Checking}/>
+      <Route name="apply" handler={Apply}/>
+      <Route name="staff" handler={Staff}/>
+      <DefaultRoute handler={Checking}/>
+  </route>
 );
-
-
 
 Router.run(routes, function (Handler) 
 {
   React.render(<Handler/>, document.getElementById('root'));
 });
-
-
-  // React.render(<Nav/>, document.getElementById('left'));
