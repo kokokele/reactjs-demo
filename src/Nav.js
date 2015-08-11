@@ -11,14 +11,16 @@ var {
 var Nav  = React.createClass({
 	render:function(){
 		return (
-			<div>
-				<ul>
-					<li><Link to='checking'>考勤统计</Link></li>
-					<li><Link to='apply'>考勤申请</Link></li>
-					<li>人事管理</li>
-					<li>系统设置</li>
-				</ul>
-				<RouteHandler/>
+			<div className="row">
+				<div className="col-md-2">
+					<ul>
+						<li><Link to='checking'>考勤统计</Link></li>
+						<li><Link to='apply'>考勤申请</Link></li>
+						<li>人事管理</li>
+						<li>系统设置</li>
+					</ul>
+				</div>
+				<div className="col-md-1"><RouteHandler/></div>
 			</div>)
 	}
 });

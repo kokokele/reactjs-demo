@@ -4,9 +4,7 @@ var Checking  = React.createClass({
 	render:function(){
 		return (
 			<div>
-				<ul>
-					Checking..
-				</ul>
+				checking
 			</div>
 		)
 	}
