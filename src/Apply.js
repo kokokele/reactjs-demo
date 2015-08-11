@@ -8,18 +8,17 @@ var {
   Link
 } = Router;
 
-var Content  = React.createClass({
+var Apply  = React.createClass({
 	render:function(){
 		return (
 			<div>
-				content
-				<p><RouteHandler/></p>
+				申请
 			</div>
 		)
 	}
 });
 
 
-module.exports = Content
+module.exports = Apply
 
 

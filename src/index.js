@@ -1,7 +1,8 @@
 import React from 'react';
-import Nav from './Nav'
-import Checking form './Checking'
-import Content form './Content'
+import Nav from './Nav';
+import Checking from  './Checking';
+import Content from './Content';
+import Apply from './Apply';
 
 var Router = require('react-router');
 var {
@@ -12,29 +13,26 @@ var {
   Link
 } = Router;
 
-import MyRect from './App';
-import Other from './Other'
+// var Index = React.createClass({
+// 	render:function(){
+// 		return (<div>Index
+// 			<p>
+// 			<Link to='my'>MyRect</Link>
+// 			</p>
+// 			<RouteHandler/>
 
-var Index = React.createClass({
-	render:function(){
-		return (<div>Index
-			<p>
-			<Link to='my'>MyRect</Link>
-			</p>
-			<RouteHandler/>
-
-			</div>)
+// 			</div>)
 		
-	}
-})
+// 	}
+// })
 
 
 var routes = (
-	<route handler={Content}>
-    <Route name="other" path="other" handler={Other}/>
-    <Route name="checking" path="checking" handler={Checking}/>
-    <DefaultRoute name="Checking"/>
-    </route>
+	    <route handler={Nav}>
+		    <Route name="checking" handler={Checking}/>
+		    <Route name="apply" handler={Apply}/>
+		    <DefaultRoute handler={Checking}/>
+		</route>
 );
 
 Router.run(routes, function (Handler) 
@@ -43,4 +41,4 @@ Router.run(routes, function (Handler)
 });
 
 
- React.render(<Nav/>, document.getElementById('left'));
+  // React.render(<Nav/>, document.getElementById('left'));
