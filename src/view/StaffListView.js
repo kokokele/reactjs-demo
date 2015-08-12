@@ -5,7 +5,7 @@ import React from 'react';
 
 var StaffM = require("../model/StaffModel")
 
-var Staff = React.createClass({
+var StaffListView = React.createClass({
 
     render:function(){
 
@@ -33,10 +33,7 @@ var Staff = React.createClass({
             <div className="container-fluid">
                 <div className="row">
                     <div className="span12">
-                        <h3>
-                            #人员管理
-                        </h3>
-                        <table className="table">
+                        <table className="table table-bordered">
                             <thead>
                             <tr>
                                 <th>姓名</th>
@@ -57,4 +54,4 @@ var Staff = React.createClass({
     }
 });
 
-module.exports = Staff;
+module.exports = StaffListView;
