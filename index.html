@@ -10,6 +10,8 @@
 
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="layer/layer.js"></script>
+<script src="laydate/laydate.js"></script>
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -40,7 +42,30 @@
   </nav></div>
     <div id='root' class="root">
     </div>
+    <input id="hello" class="laydate-icon">
+
     <script src="/bundle.js"></script>
+
+    <script type="text/javascript">
+        // layer.msg('Hello layer');
+        // layer.load(1);
+        // layer.open({
+        //     content: '<div><a href="#">aaaaa</a></div>',
+        //     yes: function(index){
+        //         //do something
+        //         layer.close(index); //一般设定yes回调，必须进行手工关闭
+        //     }
+        //
+        // });
+
+
+        laydate({
+            elem: '#hello', //目标元素。由于laydate.js封装了一个轻量级的选择器引擎，因此elem还允许你传入class、tag但必须按照这种方式 '#id .class'
+            event: 'focus', //响应事件。如果没有传入event，则按照默认的click
+            fixed: true
+        });
+
+    </script>
   </body>
 
 </html>
