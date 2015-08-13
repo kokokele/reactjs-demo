@@ -7,7 +7,7 @@ var AddStaffView = React.createClass({
                 <div className="row">
                     <div className="span12">
                         <table className="table table-bordered">
-                            <thead>
+                        <tbody>
                             <tr>
                                 <th>
                                     工号
@@ -22,8 +22,12 @@ var AddStaffView = React.createClass({
                                     职位
                                 </th>
                             </tr>
-                            </thead>
-                            <tbody>
+
+
+                            <tr align="center" style={{display:"table-row", color:'red'}}>
+                            sss
+                            <input type="text" className="form-control" placeholder="Username" aria-describedby="basic-addon1"/>
+                            </tr>
                             </tbody>
                         </table>
                     </div>

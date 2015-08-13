@@ -24,7 +24,7 @@ var Staff = React.createClass({
                 <div class="btn-group">
 				    <button class="btn" type="button"><em class="icon-align-left"></em><Link to="stafflist">员工列表</Link></button>
                     <button class="btn" type="button"><em class="icon-align-center"></em><Link to="addstaff">添加新员工</Link></button>
-                     <button class="btn" type="button"><em class="icon-align-right"></em>职位管理</button>
+                    <button class="btn" type="button"><em class="icon-align-right"></em>职位管理</button>
                     <button class="btn" type="button"><em class="icon-align-justify"></em>其他</button>
 			    </div>
                 <RouteHandler/>
